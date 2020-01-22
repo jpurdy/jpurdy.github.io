@@ -1,0 +1,32 @@
+title: James Purdy
+description: iOS Software Engineering
+permalink: /:title/
+baseurl: ""
+url: http://swiftdeveloper.ninja  # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: James Purdy # add your name
+author-img: j-purdy.jpg # add your photo
+about-author: I am a Software Engineer who specializes in iOS development. Some of the enterprise iOS projects I’ve worked on include apps for OfferUp, NEC, Intel, Disney, Toyota, and Grab. I am currently a Senior iOS Dev @ Smartsheet.
+social-twitter: pixelcloudst
+social-linkedin: jamespurdy
+social-email: jameswpurdy@gmail.com
+
+# Disqus
+discus-identifier: swift-developer-ninja  # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
