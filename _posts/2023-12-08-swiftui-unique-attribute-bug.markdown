@@ -29,7 +29,7 @@ class Event {
 
 ```
 
-While experimenting, I found the origin of this crash to be calling `save()` on the `ModelContext` prior to reading the item. `save()`, however, is not neccessary since [SwiftData will autosave an updated context](https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app).  I had missed the note on that one 😅. I'm surprised it was detrimental, though.
+While experimenting, I found the origin of this crash to be calling `save()` on the `ModelContext` prior to reading the item. `save()`, however, is not neccessary since [SwiftData can autosave an updated context](https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app).  I had missed the note on that one 😅. I'm surprised it was detrimental, though.
 
 Removing the `.save()` fixed the issue. Alternatively, making the entity field marked with the `@Attribute(.unique)` as optional solved the issue as well. In my scenario, I was able to just remove the `.save()` call on the `ModelContext`.
 
