@@ -17,9 +17,11 @@ layout: main
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
-        <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
       {{content | markdownify}}
+      <br><br>
+      <div class="page-date"><span style="float:right;">{{page.date | date: '%B %d, %Y'}}</span></div>
+      <br><br>
       <div class="page-footer">
         <div class="page-share">
           <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on X" rel="nofollow" target="_blank">X</a>
