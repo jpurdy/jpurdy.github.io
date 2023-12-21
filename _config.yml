@@ -2,19 +2,19 @@ title: James Purdy
 description: iOS Software Engineering
 permalink: /:title/
 baseurl: ""
-url: http://swiftdeveloper.ninja  # the base hostname & protocol for your site, e.g. http://example.com
+url: http://swiftdeveloper.ninja
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: James Purdy # add your name
-author-img: j-purdy.jpg # add your photo
+author: James Purdy
+author-img: j-purdy.jpg
 about-author: I am a Software Engineer who specializes in iOS development. Some of the enterprise iOS projects I’ve worked on include apps for OfferUp, NEC, Intel, Disney, Toyota, and Grab. I am currently an iOS Dev @ Smartsheet.
 social-twitter: pixelcloudst
 social-linkedin: jamespurdy
 social-email: jameswpurdy@gmail.com
 
 # Disqus
-discus-identifier: swift-developer-ninja  # add your discus identifier
+discus-identifier: swift-developer-ninja
 
 # Tracker
 analytics: # Google Analytics
@@ -25,6 +25,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-feed
 
 paginate: 15
 paginate_path: "/page/:num"
